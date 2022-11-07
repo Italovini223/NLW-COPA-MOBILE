@@ -5,9 +5,8 @@ import {THEME} from './src/styles/theme'
 
 import {Loading} from './src/components/Loading';
 
-import {SingIn} from './src/screens/SingIn'
-import {New} from './src/screens/New'
-import {Pools} from './src/screens/Pools'
+import { Routes } from "./src/routes";
+
 
 import { AuthContextProvider } from "./src/contexts/authContext";
 
@@ -24,7 +23,7 @@ export default function App() {
           translucent
         />
         {
-          fontsLoaded ? <Pools /> : <Loading />
+          fontsLoaded ? <Routes /> : <Loading />
         }
       </AuthContextProvider>
     </NativeBaseProvider>
